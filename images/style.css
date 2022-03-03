@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: green;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height:100vh;
+}
+.cards{
+display: flex;
+margin-bottom: 2rem;
+
+}
+.cardI{
+    width:16.25rem;
+    height:25rem;
+    background: hsl(31, 77%, 52%); 
+    padding: 3rem 2.2rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.cardI:nth-child(2){
+  background: hsl(184, 100%, 22%);
+  border-radius: 0 0 0 0;
+}
+.cardI:nth-child(3){
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.cardI img{
+    width:3.5rem; 
+    margin-bottom:1rem;  
+}
+.cardI h1{
+  color:hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  margin-bottom:1.5rem;
+  font-family: 'Big Shoulders Display', cursive;
+}
+.cardI p{
+  font-size:0.9rem;
+  color:hsla(0, 0%, 100%, 0.75);
+  margin-bottom:4rem;
+  line-height:1.3rem;
+  font-family: 'Lexend Deca';
+}
+button{
+  width:7.5rem;
+  height:2.5rem;
+  border-radius:3rem;
+  
+  color: hsl(31, 77%, 52%);
+  /* color:hsl(0, 0%, 95%); */
+  cursor: pointer;
+  font-size:1rem;
+  border:none;
+}
+button:hover{
+border:2px solid hsl(0, 0%, 95%);
+background:hsl(31, 77%, 52%) ;
+color:hsl(0, 0%, 95%);
+}
+.cardI:nth-child(2) button{
+  color: hsl(184, 100%, 22%);
+  background: hsl(0, 0%, 95%);
+
+  
+}
+.cardI:nth-child(2) button:hover{
+  border:2px solid hsl(0, 0%, 95%);
+background:hsl(184, 100%, 22%);
+color:hsl(0, 0%, 95%);
+}
+.cardI:nth-child(3) button{
+  color: hsl(179, 100%, 13%);
+   background: hsl(0, 0%, 95%);
+}
+.cardI:nth-child(3) button:hover{
+  border:2px solid hsl(0, 0%, 95%);
+background:hsl(179, 100%, 13%);
+color:hsl(0, 0%, 95%);
+}
+@media(max-width:850px){
+  html{
+    font-size:12px;
+  }
+}
+@media(max-width:700px){
+  html{
+    font-size:9px;
+  }
+}
+@media(max-width:440px){
+  html{
+    font-size:8px;
+  }
+  .cards{
+    flex-direction:column; 
+  }
+ 
+}
